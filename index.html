@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+
+    <div class="page">   
+        <header>
+            <h1>Library</h1>
+        </header>
+        
+        <main>
+            <button class="btn-add">+ Add book</button>
+            <div class="book-library">
+            </div>
+        </main>
+        
+        <footer>
+            <p>Copyright © 2023 Mvlprem</p>
+        </footer>    
+    </div>
+        
+    <div class="popup">
+        <form action="post" method="post" class="book-form">
+            <h1>Add new book</h1>
+            <input type="text" placeholder="Title" name="title" required>
+            <input type="text" placeholder="Author" name="author" required>
+            <input type="number" placeholder="Pages" name="pages" required>
+            <span>
+                Have you read it?
+                <input type="checkbox" name="read" class="checkbox">
+            </span>
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="button" class="btn-close">Close</button>
+        </form>
+    </div>
+
+    <div class="book-template">
+        <p>Title : <span class="title"></span></p>
+        <p>Author : <span class="author"></span></p>
+        <p><span class="pages"></span> Pages</p>
+        <button class="read">Read</button>
+        <button class="remove">Remove</button>
+    </div>
+    
+</body>
+</html>
