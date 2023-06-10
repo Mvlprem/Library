@@ -74,7 +74,7 @@ function initializeQueries(){
 }
 function toggleRead(event){
     event.stopImmediatePropagation();
-    let index = event.target.id;
+    let index = Array.from(library.children).indexOf(event.target.parentElement);
     let book = myLibrary[index];
     if(book.read){
         book.read = false;
